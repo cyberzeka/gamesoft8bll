@@ -1,0 +1,3156 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <style>
+        :root {
+            --primary: 278 66% 46%;
+            --secondary: 126 100% 49%;
+            --background: 9 9 11;
+            --foreground: 250 250 250;
+            --border: 255 255 255 / 0.05;
+            --card: var(--background);
+            --muted: 255 255 255 / 0.03;
+            --muted-foreground: 171 171 171;
+            --muted-solid: 16, 16, 18;
+            --radius: 0.6rem;
+            --background-image: url('https://cdn.centralcart.io/stores/12813/template_options/17959/background-image-f9efeae6.png');
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, nofollow" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Gamesoft - 8 Ball Pool - Home" />
+    <meta property="og:site_name" content="Gamesoft - 8 Ball Pool" />
+    <meta property="og:description" content="A maior loja de 8 Ball Pool do Brasil, oficial do canal Gamesoft Plays" />
+    <meta property="og:image" content="https://cdn.centralcart.io/stores/12813/theme/905d95af-6555-4f82-8151-3b3617b465c8.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta name="description" content="A maior loja de 8 Ball Pool do Brasil, oficial do canal Gamesoft Plays" />
+    <meta name="keywords" content="Gamesoft - 8 Ball Pool, Loja Gamesoft - 8 Ball Pool, Central Cart" />
+
+
+
+    <link rel="icon" type="image/x-icon" href="https://cdn.centralcart.io/stores/12813/theme/3d2244d9-b2f2-4cbf-ad78-5ca91a9bd114.png" />
+    <link rel="stylesheet" href="/styles/core.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
+
+    <title>
+        Gamesoft - 8 Ball Pool - Home
+    </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "hsl(var(--primary))",
+                        secondary: "hsl(var(--secondary))",
+
+                        background: "rgb(var(--background))",
+                        card: "rgb(var(--card))",
+                        foreground: "rgb(var(--foreground))",
+                        border: "rgb(var(--border))",
+                        muted: "rgb(var(--muted))",
+                        "muted-foreground": "rgb(var(--muted-foreground))",
+                        "muted-solid": "rgb(var(--muted-solid))",
+                    },
+                    borderRadius: {
+                        cc: 'var(--radius)',
+                    },
+                    fontFamily: {
+                        'geist': ['Geist', 'sans-serif'],
+                        'kanit': ['Kanit', 'sans-serif'],
+                    }
+                },
+                container: {
+                    center: true,
+                    padding: "1rem",
+                    screens: {
+                        "2xl": "1400px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base { * { @apply border-border; } html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; } body { @apply font-geist bg-background text-foreground; overflow-x: hidden; max-width: 100vw; } input, select { @apply appearance-none bg-background
+        border border-foreground/10 rounded-cc text-foreground px-2 h-8 text-sm; } input:focus-visible, select:focus-visible { outline: none; @apply ring-2 ring-primary; } .bg-primary { color: lch(from hsl(var(--primary)) calc((49.44 - l) * infinity)
+        0 0); } .bg-background { color: lch(from hsl(var(--background)) calc((49.44 - l) * infinity) 0 0); } .btn-primary { @apply bg-primary hover:bg-primary/80 transition-colors font-semibold rounded-cc px-4 h-9 flex gap-2 items-center justify-center
+        text-sm disabled:opacity-50; } .btn-secondary { @apply bg-foreground/5 hover:bg-foreground/10 transition-colors font-semibold border rounded-cc px-4 h-9 flex gap-2 items-center justify-center text-sm disabled:opacity-50; } .btn-outline { @apply
+        bg-transparent hover:bg-foreground/5 transition-colors font-semibold border border-foreground/10 rounded-cc px-4 h-9 flex gap-2 items-center justify-center text-sm disabled:opacity-50; } .btn-ghost { @apply bg-transparent hover:bg-foreground/5
+        transition-colors font-semibold rounded-cc px-4 h-9 flex gap-2 items-center justify-center text-sm disabled:opacity-50; } .font-unbounded { font-family: 'Unbounded', sans-serif; font-optical-sizing: auto; font-style: normal; } .font-unbounded-light
+        { font-family: 'Unbounded', sans-serif; font-optical-sizing: auto; font-style: normal; font-weight: 300; } }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+
+
+    <a id="top-announce" class="text-center text-sm sm:text-base w-full bg-primary p-2 flex items-center justify-center gap-3 relative z-10" href="https://www.youtube.com/channel/UCjDeUihrrPeejtPmbZh4HIQ">
+        <p class="font-medium">☑️ LOJA OFICIAL DO CANAL <span class="font-semibold bg-background px-1.5 py-0.5 rounded">GAMESOFT PLAYS</span> </p>
+    </a>
+
+
+    <script>
+        const top_announce_el = document.getElementById('top-announce')
+        if (top_announce_el) {
+            const target = new URL(top_announce_el.href).host === window.location.host ? '_self' : '_blank'
+            top_announce_el.setAttribute('target', target)
+        }
+    </script>
+
+
+
+    <header class="sticky z-20 top-0 backdrop-blur-md py-4 flex items-center border-b bg-background/80">
+        <div class="container">
+            <nav class="flex items-center justify-between sm:flex-row">
+                <div class="flex items-center flex-1 mr-4 sm:w-auto sm:mr-0">
+                    <button id="hamburger-menu" class="ml-2 w-9 h-9 border font-semibold bg-primary hover:bg-primary/90 transition-colors rounded-cc flex items-center justify-center mr-3">
+          <i data-lucide="menu" class="w-4 h-4"></i>
+        </button>
+
+                    <a href="/" class="flex items-center gap-2">
+          
+            <img src="https://cdn.centralcart.io/stores/12813/theme/905d95af-6555-4f82-8151-3b3617b465c8.png" class="size-12 rounded-md object-contain" />
+          
+
+          <div class="flex items-center gap-2">
+            <h1 class="items-center gap-1 font-semibold tracking-tighter overflow-hidden">
+              Gamesoft - 8 Ball Pool
+            </h1>
+
+            <div class="relative">
+              <i data-lucide="badge" class="size-6 text-white fill-blue-500 stroke-blue-500"></i>
+              <i data-lucide="check" class="absolute size-3.5 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"></i>
+            </div>
+          </div>
+        </a>
+
+                    <div class="hidden relative ms-6 lg:ms-0 md:block lg:absolute lg:left-1/2 lg:-translate-x-1/2">
+                        <i data-lucide="search" class="size-5 absolute left-7 sm:left-3 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold pointer-events-none"></i>
+                        <input autocomplete="off" id="search-bar" class="transition-all ps-9 placeholder:text-muted-foreground border-2 border-white/5 rounded-full h-10 w-full sm:w-[320px] lg:w-[410px] bg-white/5" placeholder="Buscar produto" />
+
+                        <div id="search-result" class="absolute top-12 left-0 w-full max-w-[410px] z-50 max-h-[400px] border bg-background border-white/10 rounded-xl overflow-auto hidden shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+
+
+                <ul class="flex gap-3 items-center text-sm mr-4">
+                    <li class="md:hidden">
+                        <button onclick="toggleMobileSearch()" class="w-9 h-9 border sm:h-9 sm:w-9 font-semibold hover:bg-white/10 transition-colors rounded-cc flex items-center justify-center">
+            <i data-lucide="search" class="w-4 h-4"></i>
+          </button>
+                    </li>
+
+                    <li>
+                        <button onclick="openCart()" class="w-9 p-0 sm:w-auto sm:px-4 btn-primary open-cart">
+            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+            <span class="hidden sm:inline">Carrinho</span>
+          </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mobile-search-container" class="relative mt-2 md:hidden hidden">
+                <i data-lucide="search" class="size-5 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold pointer-events-none"></i>
+                <input autocomplete="off" id="search-bar-mobile" class="transition-all ps-9 placeholder:text-muted-foreground border-2 border-white/5 rounded-full w-full h-10 bg-white/5" placeholder="Buscar produto" />
+
+                <div id="search-result-mobile" class="absolute top-12 left-0 w-full z-50 max-h-[400px] border bg-background border-white/10 rounded-xl overflow-auto hidden shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+        <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" onclick="toggleMobileMenu()"></div>
+
+        <div class="fixed left-0 top-0 h-full w-80 bg-background border-r border-border shadow-2xl transform transition-transform duration-300 ease-in-out -translate-x-full" id="mobile-menu-panel">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-6 border-b border-border">
+                    <div class="flex items-center gap-2">
+
+                        <img src="https://cdn.centralcart.io/stores/12813/theme/905d95af-6555-4f82-8151-3b3617b465c8.png" class="size-8 rounded-md object-contain" />
+
+                        <h2 class="font-semibold text-lg">Gamesoft - 8 Ball Pool</h2>
+                    </div>
+                    <button onclick="toggleMobileMenu()" class="w-8 h-8 border font-semibold hover:bg-white/10 transition-colors rounded-cc flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+                </div>
+
+                <div class="flex-1 overflow-hidden relative">
+                    <div id="menu-initial-screen" class="absolute inset-0 overflow-y-auto p-6 transition-transform duration-300 ease-in-out">
+                        <nav>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                  <i data-lucide="home" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium">Início</span>
+                </a>
+                                </li>
+                                <li>
+                                    <button onclick="showCategoriesScreen()" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                  <i data-lucide="grid-3x3" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium flex-1 text-left">Categorias</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+                                </li>
+                                <li>
+                                    <a href="#mais-vendidos" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors" onclick="event.preventDefault(); scrollToSection('mais-vendidos');">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium">Mais Vendidos</span>
+                </a>
+                                </li>
+                                <li>
+                                    <a href="/feedbacks-page" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors" onclick="toggleMobileMenu()">
+                  <i data-lucide="message-circle" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium">Feedbacks</span>
+                </a>
+                                </li>
+                                <li>
+                                    <a href="/#feedbacks" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors" onclick="handleAvaliacoesClick(event);">
+                  <i data-lucide="star" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium">Avaliações</span>
+                </a>
+                                </li>
+                                <li>
+                                    <a href="#perguntas-frequentes" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors" onclick="event.preventDefault(); scrollToSection('perguntas-frequentes');">
+                  <i data-lucide="help-circle" class="w-5 h-5 text-primary"></i>
+                  <span class="font-medium">Perguntas Frequentes</span>
+                </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div id="menu-categories-screen" class="absolute inset-0 overflow-y-auto transition-transform duration-300 ease-in-out translate-x-full">
+                        <div class="sticky top-0 z-10 bg-background/95 backdrop-blur-sm border-b border-border p-4">
+                            <button onclick="showInitialScreen()" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white/5 transition-colors">
+              <i data-lucide="chevron-left" class="w-5 h-5 text-primary"></i>
+              <span class="font-semibold text-base">Categorias</span>
+            </button>
+                        </div>
+
+                        <div class="px-4 py-3 space-y-1">
+
+
+
+
+
+
+
+
+
+                            <a href="/category/oKsxVAoH7r" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="grid-3x3" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">NOVIDADES ✔️</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+
+                            <a href="/category/novidades" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="layers" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">🔥 Mais Procurados</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/notas" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="banknote" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">NOTAS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/caixas-lendarias" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="gem" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">LENDÁRIOS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/caixas" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="package" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">CAIXAS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/tacos" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="pickaxe" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">TACOS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <div class="mobile-menu-category-group">
+                                <button type="button" class="group w-full flex items-center justify-between p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenuCategoryGroup('69437')" data-state="closed">
+                    <div class="flex items-center gap-3 flex-1 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="pickaxe" class="w-4 h-4 text-primary"></i>
+                      </div>
+                      <div class="flex-1 min-w-0 text-left">
+                        <span class="text-sm font-semibold text-foreground block truncate group-hover:text-primary transition-colors">TACOS FULL</span>
+                        
+                        <span class="text-xs text-muted-foreground">2 itens</span>
+                      </div>
+                    </div>
+                    <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground transition-transform duration-300 group-data-[state=open]:rotate-180 flex-shrink-0"></i>
+                  </button>
+
+                                <div class="mobile-menu-subcategories" data-category="69437" data-state="closed">
+                                    <div class="pl-12 pr-3 py-1 space-y-0.5">
+
+                                        <a href="/category/tacos-full" class="group flex items-center gap-2.5 p-2.5 rounded-md hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors flex-shrink-0"></div>
+                                            <span class="text-sm text-foreground/80 group-hover:text-primary truncate flex-1 transition-colors">TACOS FULL</span>
+                                        </a>
+
+                                        <a href="/category/tacos-animados" class="group flex items-center gap-2.5 p-2.5 rounded-md hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors flex-shrink-0"></div>
+                                            <span class="text-sm text-foreground/80 group-hover:text-primary truncate flex-1 transition-colors">TACOS ANIMADOS</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <a href="/category/avatares" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="user" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">AVATARES</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/pool-pass" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="ticket" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">POOL PASS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+
+                            <a href="/category/combos" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="keyboard" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">COMBOS</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+
+                            <a href="/category/golden-shot" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="mouse" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">GOLDEN SHOT</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+
+                            <a href="/category/golden-spin" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="cpu" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">GOLDEN SPIN</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+
+
+
+                            <a href="/category/pontos-vip" class="group flex items-center gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-foreground group-hover:text-primary truncate flex-1 transition-colors">PONTOS VIP</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0"></i>
+                            </a>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-t border-border">
+                    <div class="flex items-center gap-3 mb-4">
+
+                        <a href="/login" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors w-full">
+              <i data-lucide="log-in" class="w-5 h-5 text-primary"></i>
+              <span class="font-medium">Entrar</span>
+            </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const panel = document.getElementById('mobile-menu-panel');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    panel.classList.remove('-translate-x-full');
+                }, 10);
+            } else {
+                panel.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                    showInitialScreen();
+                }, 300);
+            }
+        }
+
+        document.getElementById('hamburger-menu').addEventListener('click', toggleMobileMenu);
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const menu = document.getElementById('mobile-menu');
+                const panel = document.getElementById('mobile-menu-panel');
+                if (!menu.classList.contains('hidden')) {
+                    panel.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        showInitialScreen();
+                    }, 300);
+                }
+            }
+        });
+
+        function showCategoriesScreen() {
+            const initialScreen = document.getElementById('menu-initial-screen');
+            const categoriesScreen = document.getElementById('menu-categories-screen');
+
+            if (initialScreen && categoriesScreen) {
+                initialScreen.style.transform = 'translateX(-100%)';
+                categoriesScreen.style.transform = 'translateX(0)';
+                lucide.createIcons();
+            }
+        }
+
+        function showInitialScreen() {
+            const initialScreen = document.getElementById('menu-initial-screen');
+            const categoriesScreen = document.getElementById('menu-categories-screen');
+
+            if (initialScreen && categoriesScreen) {
+                initialScreen.style.transform = 'translateX(0)';
+                categoriesScreen.style.transform = 'translateX(100%)';
+
+                // Fechar todas as subcategorias quando voltar
+                document.querySelectorAll('.mobile-menu-subcategories').forEach(sub => {
+                    sub.setAttribute('data-state', 'closed');
+                    const btn = sub.previousElementSibling;
+                    if (btn) btn.setAttribute('data-state', 'closed');
+                });
+
+                lucide.createIcons();
+            }
+        }
+
+        function toggleMobileMenuCategoryGroup(categoryId) {
+            const subcategories = document.querySelector(`.mobile-menu-subcategories[data-category="${categoryId}"]`);
+            if (!subcategories) return;
+
+            const button = subcategories.previousElementSibling;
+            const isOpen = subcategories.getAttribute('data-state') === 'open';
+            const nextState = isOpen ? 'closed' : 'open';
+
+            subcategories.setAttribute('data-state', nextState);
+            if (button) {
+                button.setAttribute('data-state', nextState);
+            }
+
+            lucide.createIcons();
+        }
+
+        function handleAvaliacoesClick(event) {
+            const currentPath = window.location.pathname;
+            const isIndexPage = currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/index');
+
+            if (!isIndexPage) {
+                event.preventDefault();
+                toggleMobileMenu();
+                window.location.href = '/#feedbacks';
+                return;
+            }
+
+            event.preventDefault();
+            scrollToSection('feedbacks');
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (!element) {
+                toggleMobileMenu();
+                return;
+            }
+
+            const waitForContent = () => {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const carousel = document.querySelector('.carousel-track');
+                        if (carousel) {
+                            setTimeout(resolve, 200);
+                        } else {
+                            resolve();
+                        }
+                    }, 100);
+                });
+            };
+
+            waitForContent().then(() => {
+                const carousel = document.querySelector('.carousel-track');
+                if (carousel) {
+                    carousel.style.animationPlayState = 'paused';
+                }
+
+                const headerHeight = 80;
+                const elementPosition = element.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+
+                let scrollTimeout;
+                const handleScroll = () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        if (carousel) {
+                            carousel.style.animationPlayState = 'running';
+                        }
+                        window.removeEventListener('scroll', handleScroll);
+                    }, 150);
+                };
+
+                window.addEventListener('scroll', handleScroll);
+            });
+
+            toggleMobileMenu();
+        }
+    </script>
+    <div id="cart-drawer" class="w-screen h-screen flex items-center justify-end z-50 fixed top-0 left-0 group hidden" data-state="closed">
+        <div class="h-full w-full lg:w-[450px] p-5 flex flex-col bg-background border-l">
+            <div class="flex items-center justify-between mb-4">
+                <h4 class="text-lg font-semibold">Carrinho</h4>
+                <button onclick="closeCart()">
+        <i data-lucide="x" class="text-muted-foreground hover:text-foreground transition-colors size-5"></i>
+      </button>
+            </div>
+            <div class="space-y-3 h-full flex flex-col" id="cart-drawer-wrapper"></div>
+            <div class="mt-auto">
+                <div class="bg-muted w-full px-3 h-12 items-center rounded-cc flex justify-between mb-3" id="cart-pricing">
+                    <p class="font-normal text-muted-foreground">Valor total:</p>
+                    <span class="font-semibold">R$ 0,00</span>
+                </div>
+                <a href="/checkout" class="btn-primary text-base h-10">
+        Ir para a compra
+      </a>
+            </div>
+        </div>
+    </div>
+    <div id="fake-purchase-root" class="fixed bottom-6 left-4 z-50 pointer-events-none"></div>
+
+    <script>
+        const PRODUCTS = [
+            "40 MILHÕES DE FICHAS + 5M DE BÔNUS - R$ 24,90",
+            "MEGA PROMOÇÃO - 8 a 12 Tacos Lendários - R$ 79,90",
+            "36 MIL NOTAS - R$ 389,90",
+            "NOTAS PARA O VIP ESMERALDA - R$ 79,90",
+            "TACO PRAGA DO GELO + NOTAS - R$ 79,90",
+            "TACO GIANT SPIDER + AVATAR - R$ 49,90",
+            "POOL PASS - TEMPORADA ATUAL - R$ 25,00",
+            "3 ITENS POR 19,90 - TACO + AVATAR + ADESIVO - R$ 19,90",
+            "ANEL DE OSAKA - R$ 169,90",
+            "VITÓRIAS NA SUA CONTA - R$ 1,50",
+            "TACO ALLOY + NOTAS - R$ 69,90",
+            "TACO SAMURAI CORROMPIDO + NOTAS - R$ 59,90",
+            "TACO WICKED + AVATAR - R$ 44,90",
+            "TACO BATTLE ANGEL + AVATAR - R$ 29,90",
+            "TACO GURU DOS EFEITOS + NOTAS - R$ 99,99",
+            "TACO OSTARA + NOTAS - R$ 89,90",
+            "TACO ATIRADOR + NOTAS - R$ 109,90",
+            "CAIXAS LENDÁRIAS VIP OURO - R$ 99,90",
+            "200 MILHÕES DE FICHAS + 40M DE BÔNUS - R$ 69,90",
+            "PROMOÇÃO - NOTAS VIP PRATA - R$ 159,90"
+        ];
+
+
+        const NAMES = [
+            "Lucas", "Antonio", "Luiz", "João", "Edson", "Rafaela", "Reinaldo",
+            "Felippe", "Marcos", "Carla", "Bruno", "Thiago", "Lucas S.", "Camila",
+            "Diego", "Guilherme", "Matheus", "Marcelo", "Victor", "Paula"
+        ];
+
+        function randInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function randomBuyer() {
+            const name = NAMES[randInt(0, NAMES.length - 1)];
+            const suffixes = ["", "", " S.", " (SP)", "23", "BR", "99"];
+            return name + suffixes[randInt(0, suffixes.length - 1)];
+        }
+
+        function randomProduct() {
+            return PRODUCTS[randInt(0, PRODUCTS.length - 1)];
+        }
+
+        function randomRelativeTime() {
+            const minutes = randInt(1, 12 * 60);
+            if (minutes < 60) {
+                return minutes === 1 ? "1 minuto atrás" : `${minutes} minutos atrás`;
+            } else {
+                const hours = Math.floor(minutes / 60);
+                return hours === 1 ? "1 hora atrás" : `${hours} horas atrás`;
+            }
+        }
+
+        const root = document.getElementById("fake-purchase-root");
+
+        function createPopup(buyer, product, timeText) {
+            const container = document.createElement("div");
+            container.className = "pointer-events-auto w-[88vw] max-w-xs sm:max-w-sm mb-3";
+
+            container.innerHTML = `
+      <div class="animate-slide-in flex items-center gap-3 rounded-lg border border-white/10 bg-gradient-to-r from-white/5 to-white/3 px-3 py-2 shadow-lg">
+        <div class="flex-shrink-0">
+          <div class="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-primary flex items-center justify-center ring-1 ring-white/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-2">
+            <p class="text-sm font-semibold text-slate-100 truncate">${buyer} comprou</p>
+            <button class="close-btn text-slate-400 hover:text-slate-100 transition-none" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <p class="mt-1 text-sm text-slate-300 truncate">${product}</p>
+          <p class="mt-1 text-xs text-slate-400">${timeText}</p>
+        </div>
+      </div>
+    `;
+
+            const closeBtn = container.querySelector(".close-btn");
+            closeBtn.addEventListener("click", () => {
+                container.classList.remove("animate-slide-in");
+                container.classList.add("animate-slide-out");
+                setTimeout(() => container.remove(), 300);
+            });
+
+            return container;
+        }
+
+        function showPopupOnce() {
+            const buyer = randomBuyer();
+            const product = randomProduct();
+            const rel = randomRelativeTime();
+            const popup = createPopup(buyer, product, rel);
+            root.appendChild(popup);
+            setTimeout(() => {
+                if (popup.parentNode) {
+                    popup.classList.remove("animate-slide-in");
+                    popup.classList.add("animate-slide-out");
+                    setTimeout(() => popup.remove(), 300);
+                }
+            }, 6000);
+        }
+
+        window.addEventListener("load", () => {
+            showPopupOnce();
+            setInterval(showPopupOnce, 25000);
+        });
+
+        const style = document.createElement("style");
+        style.textContent = `
+    @keyframes slideIn {
+      0% { transform: translateX(-60px) scale(.98); opacity: 0; }
+      60% { transform: translateX(8px) scale(1.01); opacity: 1; }
+      100% { transform: translateX(0) scale(1); opacity: 1; }
+    }
+    @keyframes slideOut {
+      0% { transform: translateX(0) scale(1); opacity: 1; }
+      100% { transform: translateX(-60px) scale(.98); opacity: 0; }
+    }
+    .animate-slide-in { animation: slideIn .42s cubic-bezier(.2,.9,.2,1) both; }
+    .animate-slide-out { animation: slideOut .28s cubic-bezier(.2,.9,.2,1) both; }
+  `;
+        document.head.appendChild(style);
+    </script>
+
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+
+        <div class="size-[30rem] rounded-full bg-gradient-to-bl from-primary/15 blur-3xl absolute -top-1/3"></div>
+        <div class="hidden sm:block size-[45rem] rounded-full bg-gradient-to-bl from-primary/30 blur-3xl absolute -top-1/3 -right-1/2 sm:right-20"></div>
+    </div>
+
+
+    <img alt="Background image" class="fixed object-cover select-none pointer-events-none custom-bg-mask w-full h-full top-0 z -z-20" src="https://cdn.centralcart.io/stores/12813/template_options/17959/background-image-f9efeae6.png" />
+
+
+    <main class="flex-1">
+
+        <div class="container px-0 lg:pt-6">
+            <div class="relative w-full overflow-hidden">
+                <div class="carousel-container relative">
+                    <div class="carousel-wrapper flex transition-transform duration-500 ease-in-out" id="carouselWrapper">
+                        <!-- Banner 1 -->
+                        <a href="https:https://wa.me/5517936332463" target="_blank" class="carousel-slide w-full flex-shrink-0">
+                            <div class="relative min-h-48 sm:min-h-64 md:min-h-72 lg:min-h-80 xl:min-h-96 flex items-center justify-center">
+                                <img src="https://i.imgur.com/cB1gH1h.png" alt="Banner 1" class="max-w-full max-h-full object-contain lg:rounded-xl">
+                            </div>
+                        </a>
+
+                        <!-- Banner 2 -->
+                        <a href="#" class="carousel-slide w-full flex-shrink-0">
+                            <div class="relative min-h-48 sm:min-h-64 md:min-h-72 lg:min-h-80 xl:min-h-96 flex items-center justify-center">
+                                <img src="https://i.imgur.com/Gn8qDkT.png" alt="Banner 2" class="max-w-full max-h-full object-contain lg:rounded-xl">
+                            </div>
+                        </a>
+
+                        <!-- Banner 3 -->
+                        <a href="https://gamesoft8bp.com/category/tacos" target="_blank" class="carousel-slide w-full flex-shrink-0">
+                            <div class="relative min-h-48 sm:min-h-64 md:min-h-72 lg:min-h-80 xl:min-h-96 flex items-center justify-center">
+                                <img src="https://i.imgur.com/qmynlko.png" alt="Banner 3" class="max-w-full max-h-full object-contain lg:rounded-xl">
+                            </div>
+                        </a>
+                    </div>
+
+                    <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Banner anterior">
+
+      </button>
+
+                    <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Próximo banner">
+      </button>
+                </div>
+
+                <div class="flex justify-center space-x-2 mt-3 pb-3">
+                    <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 transition-colors duration-300 active" data-slide="0" aria-label="Ir para banner 1"></button>
+                    <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 transition-colors duration-300" data-slide="1" aria-label="Ir para banner 2"></button>
+                    <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 transition-colors duration-300" data-slide="2" aria-label="Ir para banner 3"></button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            class Carousel {
+                constructor() {
+                    this.currentSlide = 0;
+                    this.slides = document.querySelectorAll('.carousel-slide');
+                    this.totalSlides = this.slides.length;
+                    this.wrapper = document.getElementById('carouselWrapper');
+                    this.indicators = document.querySelectorAll('.carousel-indicator');
+                    this.prevBtn = document.getElementById('prevBtn');
+                    this.nextBtn = document.getElementById('nextBtn');
+                    this.autoPlayInterval = null;
+                    this.autoPlayDelay = 5000;
+
+                    this.init();
+                }
+
+                init() {
+                    this.prevBtn.addEventListener('click', () => this.prevSlide());
+                    this.nextBtn.addEventListener('click', () => this.nextSlide());
+
+                    this.indicators.forEach((indicator, index) => {
+                        indicator.addEventListener('click', () => this.goToSlide(index));
+                    });
+
+                    const carousel = document.querySelector('.carousel-container');
+                    carousel.addEventListener('mouseenter', () => this.pauseAutoPlay());
+                    carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+
+                    this.addTouchSupport();
+                    this.startAutoPlay();
+                    this.updateIndicators();
+                }
+
+                nextSlide() {
+                    this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                    this.updateCarousel();
+                }
+
+                prevSlide() {
+                    this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                    this.updateCarousel();
+                }
+
+                goToSlide(index) {
+                    this.currentSlide = index;
+                    this.updateCarousel();
+                }
+
+                updateCarousel() {
+                    const translateX = -this.currentSlide * 100;
+                    this.wrapper.style.transform = `translateX(${translateX}%)`;
+                    this.updateIndicators();
+                }
+
+                updateIndicators() {
+                    this.indicators.forEach((indicator, index) => {
+                        if (index === this.currentSlide) {
+                            indicator.classList.add('active', 'bg-blue-600');
+                            indicator.classList.remove('bg-gray-400');
+                        } else {
+                            indicator.classList.remove('active', 'bg-blue-600');
+                            indicator.classList.add('bg-gray-400');
+                        }
+                    });
+                }
+
+                startAutoPlay() {
+                    this.pauseAutoPlay();
+                    this.autoPlayInterval = setInterval(() => this.nextSlide(), this.autoPlayDelay);
+                }
+
+                pauseAutoPlay() {
+                    if (this.autoPlayInterval) {
+                        clearInterval(this.autoPlayInterval);
+                        this.autoPlayInterval = null;
+                    }
+                }
+
+                addTouchSupport() {
+                    let startX = 0;
+                    const minSwipeDistance = 50;
+
+                    this.wrapper.addEventListener('touchstart', (e) => {
+                        startX = e.touches[0].clientX;
+                    });
+                    this.wrapper.addEventListener('touchend', (e) => {
+                        const endX = e.changedTouches[0].clientX;
+                        const swipeDistance = endX - startX;
+                        if (Math.abs(swipeDistance) > minSwipeDistance) {
+                            swipeDistance > 0 ? this.prevSlide() : this.nextSlide();
+                        }
+                    });
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => new Carousel());
+
+            window.addEventListener('resize', () => {
+                setTimeout(() => {
+                    const wrapper = document.getElementById('carouselWrapper');
+                    const activeIndicator = document.querySelector('.carousel-indicator.active');
+                    if (wrapper && activeIndicator) {
+                        const translateX = -activeIndicator.dataset.slide * 100;
+                        wrapper.style.transform = `translateX(${translateX}%)`;
+                    }
+                }, 100);
+            });
+        </script>
+
+        <style>
+            .carousel-container {
+                user-select: none;
+            }
+
+            .carousel-slide {
+                transition: all 0.3s ease;
+            }
+
+            .carousel-indicator.active {
+                transform: scale(1.2);
+            }
+
+            .carousel-btn {
+                backdrop-filter: blur(4px);
+            }
+
+            .carousel-btn:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            @media (max-width: 640px) {
+                .container {
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    margin-top: 0 !important;
+                }
+                .carousel-btn {
+                    padding: 0.5rem;
+                }
+                .carousel-btn svg {
+                    width: 1rem;
+                    height: 1rem;
+                }
+                .carousel-slide {
+                    min-height: 12rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .carousel-slide {
+                    min-height: 10rem;
+                }
+                .carousel-btn {
+                    padding: 0.375rem;
+                }
+                .carousel-btn svg {
+                    width: 0.875rem;
+                    height: 0.875rem;
+                }
+            }
+
+            .carousel-slide img {
+                transition: none;
+                object-fit: cover;
+            }
+        </style>
+
+
+        <div class="space-y-6 pt-0 sm:pt-12 pb-12 px-4 overflow-x-hidden">
+
+
+
+
+            <section class="container py-8 flex items-center justify-center">
+                <div class="flex flex-col items-center text-center">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl lg:max-w-4xl font-bold mb-4 font-unbounded headline-shadow">
+                        A maior loja de<br>
+                        <span class="text-primary">8 Ball Pool</span> do Brasil&nbsp;🎱
+                    </h1>
+
+                    <p class="max-w-[600px] mb-8 font-unbounded-light flex justify-center"><span class="text-white inline-block">Aqui você encontra todos os itens do maior jogo de sinuca online do mundo! 🛒</span></p>
+
+                    <div class="flex gap-2 items-center text-sm">
+                        <a href="#store" class="btn-primary h-10">Ver produtos <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+
+
+
+
+                        <div class="relative">
+                            <button class="px-3 py-2 border font-semibold hover:bg-white/10 transition-colors rounded-cc flex items-center gap-2 group" onclick="handleSupportMenu()" id="support-button">
+      <i data-lucide="headset" class="w-4 h-4"></i>
+      <span>Suporte</span>
+    </button>
+
+                            <div class="max-h-[calc(100vh-4rem-2.25rem)] overflow-y-auto absolute top-16 bg-background p-3 -right-12 sm:right-0 rounded-cc 
+      border border-foreground/10 w-fit origin-top-right 
+      scale-75 transition-all invisible opacity-0 duration-200 z-30" id="support-menu">
+                                <div class="flex justify-center items-center gap-2 whitespace-nowrap">
+                                    <i data-lucide="headset" class="size-5 text-primary">Suporte</i>
+                                    <h3 class="font-semibold text-base">Canais de atendimento</h3>
+                                </div>
+
+                                <hr class="bg-muted my-3">
+
+                                <div class="space-y-2">
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="https://www.instagram.com/gamesoft8ballpool/" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-lg hover:bg-muted transition-colors group">
+                <svg 
+                  class="size-5" 
+                  style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                  mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');
+                  -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                  -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');
+                  background-color: #C13584;"
+                ></svg>
+                <div class="flex-1 min-w-0">
+                  <div class="font-semibold text-sm">Instagram</div>
+                </div>
+                <i data-lucide="external-link" class="size-4 text-muted-foreground group-hover:text-foreground transition-colors"></i>
+              </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="https://www.youtube.com/@GamesoftPlays" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-lg hover:bg-muted transition-colors group">
+                <svg 
+                  class="size-5" 
+                  style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                  mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');
+                  -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                  -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');
+                  background-color: #FF0000;"
+                ></svg>
+                <div class="flex-1 min-w-0">
+                  <div class="font-semibold text-sm">Youtube</div>
+                </div>
+                <i data-lucide="external-link" class="size-4 text-muted-foreground group-hover:text-foreground transition-colors"></i>
+              </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="https://wa.me/5517936332463" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-lg hover:bg-muted transition-colors group">
+                <svg 
+                  class="size-5" 
+                  style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                  mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');
+                  -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                  -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');
+                  background-color: #25D366;"
+                ></svg>
+                <div class="flex-1 min-w-0">
+                  <div class="font-semibold text-sm">Whatsapp</div>
+                </div>
+                <i data-lucide="external-link" class="size-4 text-muted-foreground group-hover:text-foreground transition-colors"></i>
+              </a>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="https://t.me/gamesoft8bp" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-lg hover:bg-muted transition-colors group">
+                <svg 
+                  class="size-5" 
+                  style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                  mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');
+                  -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                  -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');
+                  background-color: #0088CC;"
+                ></svg>
+                <div class="flex-1 min-w-0">
+                  <div class="font-semibold text-sm">Telegram</div>
+                </div>
+                <i data-lucide="external-link" class="size-4 text-muted-foreground group-hover:text-foreground transition-colors"></i>
+              </a>
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <script>
+                            const supportMenu = document.getElementById("support-menu")
+                            const supportButton = document.getElementById("support-button")
+
+                            function openSupportMenu() {
+                                supportButton.setAttribute("data-state", "open")
+
+                                supportMenu.classList.remove("invisible")
+                                setTimeout(() => {
+                                    supportMenu.classList.add("scale-100", "opacity-100")
+                                }, 1);
+                            }
+
+                            function closeSupportMenu() {
+                                supportButton.setAttribute("data-state", "closed")
+
+                                supportMenu.classList.remove("scale-100", "opacity-100")
+                                supportMenu.classList.add("scale-75", "opacity-0")
+                                setTimeout(() => {
+                                    supportMenu.classList.add("invisible")
+                                }, 199);
+                            }
+
+                            function handleSupportMenu() {
+                                if (supportMenu.classList.contains("invisible")) {
+                                    openSupportMenu()
+                                } else {
+                                    closeSupportMenu()
+                                }
+                            }
+
+                            window.addEventListener("click", (event) => {
+                                const isClickInsideMenu = supportMenu.contains(event.target);
+                                const isClickOnButton = supportButton.contains(event.target);
+
+                                if (!isClickInsideMenu && !isClickOnButton) {
+                                    closeSupportMenu();
+                                }
+                            });
+                        </script>
+
+
+                    </div>
+            </section>
+
+
+
+
+
+            <section class="container pt-6" id="categorias">
+                <h2 class="my-4 font-bold text-2xl">Categorias populares</h2>
+
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-3 mt-4">
+
+                    <a href="/category/notas" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/92b9d488-2f3e-4597-95a7-dc9e56fe06f8.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="NOTAS"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              NOTAS
+            </span>
+          </a>
+
+                    <a href="/category/caixas-lendarias" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/4bcf16f0-fd61-4170-bb66-ee642e698c80.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="LENDÁRIOS"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              LENDÁRIOS
+            </span>
+          </a>
+
+                    <a href="/category/caixas" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/4e121d59-6053-4bd5-8ebc-ff54766bd2a1.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="CAIXAS"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              CAIXAS
+            </span>
+          </a>
+
+                    <a href="/category/tacos" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/febeffed-69cb-4dda-8f27-1d1a62705a28.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="TACOS"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              TACOS
+            </span>
+          </a>
+
+                    <a href="/category/tacos-full" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/b1599c3f-d9d7-456f-b4f2-07dffdc818e0.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="TACOS FULL"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              TACOS FULL
+            </span>
+          </a>
+
+                    <a href="/category/avatares" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/206532b6-bbc2-4661-b1f2-041d8968554b.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="AVATARES"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              AVATARES
+            </span>
+          </a>
+
+                    <a href="/category/combos" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/5534894a-4885-4dce-89e7-a4a29ccaf5f5.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="COMBOS"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              COMBOS
+            </span>
+          </a>
+
+                    <a href="/category/pontos-vip" class="bg-background border hover:bg-secondary/80 rounded-cc aspect-[187/250] flex items-end justify-center py-8 px-2 relative 
+            overflow-hidden cursor-pointer ring-offset-secondary hover:ring-2 ring-secondary transition-all group">
+            <img 
+              src="https://cdn.centralcart.io/stores/12813/categories/2eb17030-e7a1-4635-80c6-31f2348c8447.png" 
+              class="absolute top-0 left-0 w-full h-full select-none object-cover group-hover:scale-105 transition-all ease-in-out" 
+              style="mask-image: linear-gradient(rgb(0, 0, 0) 5%, transparent 95%)"
+              loading="lazy"
+              alt="PONTOS VIP"
+            >
+            <span class="text-sm sm:text-lg font-semibold text-center z-10">
+              PONTOS VIP
+            </span>
+          </a>
+
+                </div>
+            </section>
+
+
+            <section id="mais-vendidos" class="py-8">
+                <div class="container">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-2 font-unbounded headline-shadow">
+                            MAIS VENDIDOS&nbsp;🔥
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-auto font-unbounded-light flex justify-center">
+                            <span class="text-white inline-block">Produtos para turbinar sua conta&nbsp;👇🏻</span>
+                        </p>
+                    </div>
+
+                    <div class="relative overflow-hidden w-full">
+                        <div id="carousel-track" class="carousel-track flex gap-4 overflow-x-hidden">a
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                const apiUrl = "https://api.centralcart.com.br/v1/webstore/package";
+                const storeSlug = "gamesoft8ballpool.centralcart.com.br";
+                const produtosIDs = [321603, 321927, 321929, 322248, 321989, 363481, 321988];
+                const percentualDesconto = 50;
+
+                async function carregarProdutos() {
+                    const container = document.getElementById("carousel-track");
+                    container.innerHTML = "";
+
+                    for (const id of produtosIDs) {
+                        try {
+                            const response = await fetch(`${apiUrl}?v=2&id=${id}`, {
+                                headers: {
+                                    "x-store-domain": storeSlug
+                                }
+                            });
+                            const data = await response.json();
+                            const pacote = data.data ? .[0];
+                            if (!pacote) continue;
+
+                            const precoReal = pacote.pricing.price;
+                            const precoRiscado = precoReal * 100 / (100 - percentualDesconto);
+                            const slug = pacote.slug;
+
+                            const card = document.createElement("div");
+                            card.className = "product-card flex-shrink-0 w-72";
+                            card.innerHTML = `
+        <div class="bg-card rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer" onclick="window.location.href='/package/${slug}'">
+          <div class="relative w-full overflow-hidden">
+            <img src="${pacote.image}" alt="${pacote.name}" class="w-full h-auto object-contain" />
+            <div class="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">Mais Vendido</div>
+            <div class="absolute top-4 left-4 bg-red-600 text-white px-2 py-1 rounded-full text-xs font-bold">-${percentualDesconto}%</div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-lg mb-2 line-clamp-2">${pacote.name}</h3>
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col">
+                <span class="text-sm line-through text-muted-foreground">R$ ${precoRiscado.toFixed(2)}</span>
+                <span class="text-2xl font-bold text-primary">R$ ${precoReal.toFixed(2)}</span>
+              </div>
+              <button class="btn-primary px-4 py-2 text-sm">Comprar</button>
+            </div>
+          </div>
+        </div>
+      `;
+                            container.appendChild(card);
+                        } catch (err) {
+                            console.error("Erro ao carregar produto ID:", id, err);
+                        }
+                    }
+
+                    container.innerHTML += container.innerHTML;
+
+                    iniciarCarrossel(container);
+                }
+
+                function iniciarCarrossel(track) {
+                    let pos = 0;
+                    let speed = 0.3;
+                    let isDragging = false;
+                    let startX = 0;
+                    let scrollLeft = 0;
+                    let paused = false;
+
+                    function loop() {
+                        if (!paused && !isDragging) {
+                            pos += speed;
+                            if (pos >= track.scrollWidth / 2) pos = 0;
+                            track.scrollLeft = pos;
+                        }
+                        requestAnimationFrame(loop);
+                    }
+
+                    function startDrag(pageX) {
+                        isDragging = true;
+                        paused = true;
+                        startX = pageX - track.offsetLeft;
+                        scrollLeft = track.scrollLeft;
+                    }
+
+                    function moveDrag(pageX) {
+                        if (!isDragging) return;
+                        const x = pageX - track.offsetLeft;
+                        const walk = (x - startX) * 1.5;
+                        track.scrollLeft = scrollLeft - walk;
+                    }
+
+                    function endDrag() {
+                        if (!isDragging) return;
+                        isDragging = false;
+                        pos = track.scrollLeft;
+                        paused = false;
+                    }
+
+                    track.addEventListener("mousedown", (e) => startDrag(e.pageX));
+                    track.addEventListener("mousemove", (e) => moveDrag(e.pageX));
+                    track.addEventListener("mouseup", endDrag);
+                    track.addEventListener("mouseleave", endDrag);
+
+                    track.addEventListener("touchstart", (e) => startDrag(e.touches[0].pageX));
+                    track.addEventListener("touchmove", (e) => moveDrag(e.touches[0].pageX));
+                    track.addEventListener("touchend", endDrag);
+                    track.addEventListener("touchcancel", endDrag);
+
+                    track.addEventListener("mouseenter", () => (paused = true));
+                    track.addEventListener("mouseleave", () => {
+                        paused = false;
+                        pos = track.scrollLeft;
+                    });
+
+                    loop();
+                }
+
+                document.addEventListener("DOMContentLoaded", carregarProdutos);
+            </script>
+
+            <style>
+                .carousel-track {
+                    display: flex;
+                    overflow-x: hidden;
+                    overflow-y: visible;
+                    user-select: none;
+                    cursor: grab;
+                    -webkit-overflow-scrolling: touch;
+                    scroll-behavior: auto;
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .product-card {
+                    flex-shrink: 0;
+                    width: 280px;
+                    transition: all 0.3s ease;
+                }
+
+                .product-card:hover {
+                    transform: translateY(-8px) scale(1.02);
+                }
+
+                @media (max-width: 768px) {
+                    .product-card {
+                        width: 320px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .product-card {
+                        width: 300px;
+                    }
+                }
+
+                h2,
+                p {
+                    white-space: normal;
+                }
+
+                h2 emoji,
+                p emoji {
+                    display: inline;
+                    white-space: nowrap;
+                }
+            </style>
+
+
+            <section id="store" class="container pb-12 relative scroll-m-24">
+
+                <!-- Desktop Sidebar -->
+                <div class="absolute -left-48 top-0 h-full hidden min-[1800px]:block">
+                    <div class="sticky top-24 z-30 flex flex-col gap-1 bg-muted backdrop-blur-sm border 
+    border-foreground/10 rounded-2xl p-2 shadow-xl max-h-[80vh] overflow-auto w-48 min-w-[10rem] 
+    sidebar-categories-menu custom-scrollbar">
+
+
+                        <a href="/category/oKsxVAoH7r" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">NOVIDADES ✔️</span>
+        </a>
+
+
+
+                        <a href="/category/novidades" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">🔥 Mais Procurados</span>
+        </a>
+
+
+
+                        <a href="/category/notas" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">NOTAS</span>
+        </a>
+
+
+
+                        <a href="/category/caixas-lendarias" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">LENDÁRIOS</span>
+        </a>
+
+
+
+                        <a href="/category/caixas" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">CAIXAS</span>
+        </a>
+
+
+
+                        <a href="/category/tacos" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">TACOS</span>
+        </a>
+
+
+
+                        <button type="button" class="group btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="toggleCategoryDropdown('69437')" data-state="closed">
+          <span class="truncate">TACOS FULL</span>
+          <i data-lucide="chevron-down" class="size-4 ml-2 flex-shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180"></i>
+        </button>
+                        <div class="cat-dropdown data-[state=closed]:hidden data-[state=open]:flex flex-col w-full" data-id="69437" data-state="closed">
+                            <div class="rounded-xl overflow-hidden bg-background/95 border border-border shadow-lg backdrop-blur-sm">
+
+                                <a href="/category/tacos-full" class="btn-ghost w-full justify-between px-4 py-1 h-8 text-xs font-medium rounded-none" title="TACOS FULL">
+                <span class="align-middle truncate block">TACOS FULL</span>
+              </a>
+
+                                <a href="/category/tacos-animados" class="btn-ghost w-full justify-between px-4 py-1 h-8 text-xs font-medium rounded-none" title="TACOS ANIMADOS">
+                <span class="align-middle truncate block">TACOS ANIMADOS</span>
+              </a>
+
+                            </div>
+                        </div>
+
+
+
+                        <a href="/category/avatares" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">AVATARES</span>
+        </a>
+
+
+
+                        <a href="/category/pool-pass" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">POOL PASS</span>
+        </a>
+
+
+
+                        <a href="/category/combos" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">COMBOS</span>
+        </a>
+
+
+
+                        <a href="/category/golden-shot" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">GOLDEN SHOT</span>
+        </a>
+
+
+
+                        <a href="/category/golden-spin" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">GOLDEN SPIN</span>
+        </a>
+
+
+
+                        <a href="/category/pontos-vip" class="btn-secondary w-full justify-between rounded-cc px-3 py-2 text-xs font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40">
+          <span class="truncate">PONTOS VIP</span>
+        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Mobile Selector -->
+                <div class="min-[1800px]:hidden mb-4 sm:absolute sm:right-8 sm:z-10 sm:w-[300px]">
+                    <div class="relative">
+                        <!-- Mobile Toggle Button -->
+                        <button type="button" id="mobile-category-toggle" class="group btn-secondary backdrop-blur-sm w-full justify-between rounded-cc px-4 h-10 text-sm font-medium bg-background/30" onclick="toggleMobileCategories()" data-state="closed">
+      <span class="flex items-center">
+        <i data-lucide="menu" class="w-4 h-4 mr-2"></i>
+        Categorias
+      </span>
+      <i  data-lucide="chevron-down" class="size-4 transition-transform duration-200 group-data-[state=open]:rotate-180"></i>
+    </button>
+
+                        <!-- Mobile Category Dropdown -->
+                        <div id="mobile-categories-dropdown" class="data-[state=closed]:hidden data-[state=open]:block absolute top-full left-0 right-0 z-50 mt-2 bg-background/90 backdrop-blur-sm border border-border rounded-xl shadow-xl max-h-[60vh] overflow-y-auto custom-scrollbar"
+                            data-state="closed">
+                            <div class="p-2 space-y-1">
+
+
+                                <a href="/category/oKsxVAoH7r" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">NOVIDADES ✔️</span>
+            </a>
+
+
+
+                                <a href="/category/novidades" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">🔥 Mais Procurados</span>
+            </a>
+
+
+
+                                <a href="/category/notas" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">NOTAS</span>
+            </a>
+
+
+
+                                <a href="/category/caixas-lendarias" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">LENDÁRIOS</span>
+            </a>
+
+
+
+                                <a href="/category/caixas" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">CAIXAS</span>
+            </a>
+
+
+
+                                <a href="/category/tacos" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">TACOS</span>
+            </a>
+
+
+
+                                <div class="mobile-category-group">
+                                    <button type="button" class="group btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="toggleMobileCategoryGroup('69437')" data-state="closed">
+                <span class="truncate">TACOS FULL</span>
+                <i data-lucide="chevron-down" class="size-4 ml-2 transition-transform duration-200 group-data-[state=open]:rotate-180"></i>
+              </button>
+                                    <div class="mobile-subcategories data-[state=closed]:hidden data-[state=open]:block mt-1 space-y-1" data-category="69437" data-state="closed">
+
+                                        <a href="/category/tacos-full" class="btn-ghost w-full justify-between px-4 py-1 h-8 text-sm font-medium" onclick="closeMobileCategories()">
+                    <span class="truncate block">TACOS FULL</span>
+                  </a>
+
+                                        <a href="/category/tacos-animados" class="btn-ghost w-full justify-between px-4 py-1 h-8 text-sm font-medium" onclick="closeMobileCategories()">
+                    <span class="truncate block">TACOS ANIMADOS</span>
+                  </a>
+
+                                    </div>
+                                </div>
+
+
+
+                                <a href="/category/avatares" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">AVATARES</span>
+            </a>
+
+
+
+                                <a href="/category/pool-pass" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">POOL PASS</span>
+            </a>
+
+
+
+                                <a href="/category/combos" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">COMBOS</span>
+            </a>
+
+
+
+                                <a href="/category/golden-shot" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">GOLDEN SHOT</span>
+            </a>
+
+
+
+                                <a href="/category/golden-spin" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">GOLDEN SPIN</span>
+            </a>
+
+
+
+                                <a href="/category/pontos-vip" class="btn-ghost w-full justify-between rounded-cc px-3 py-2 text-sm font-medium border border-transparent hover:bg-primary/10 hover:border-primary/40" onclick="closeMobileCategories()">
+              <span class="truncate">PONTOS VIP</span>
+            </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="categories-container" class="mt-12 relative">
+                    <div class="space-y-12 sm:space-y-20">
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                NOVIDADES ✔️
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="77359">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                🔥 Mais Procurados
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54998">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                NOTAS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="53970">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                LENDÁRIOS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="53973">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                CAIXAS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54002">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                TACOS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54003">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                TACOS FULL
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="69437">
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                TACOS ANIMADOS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="70600">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                AVATARES
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54004">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                POOL PASS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54005">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                COMBOS
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54006">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                GOLDEN SHOT
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54007">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                GOLDEN SPIN
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54008">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="min-h-[300px]">
+                            <h3 class="bg-primary/20 border-2 border-primary w-fit py-2 
+      px-4 rounded-cc text-sm sm:text-base font-semibold backdrop-blur-sm reveal-fade-up">
+                                PONTOS VIP
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 mt-4 sm:mt-8 package-list" data-category-id="54071">
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Feedbacks -->
+            <section id="feedbacks" class="py-16">
+                <div class="container">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-2 font-unbounded headline-shadow">
+                            AVALIAÇÕES
+                        </h2>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-2 font-unbounded headline-shadow">
+                            DA LOJA ☑️
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-auto font-unbounded-light flex justify-center">
+                            <span class="text-white inline-block">Depoimentos reais de clientes que já compraram conosco&nbsp;👇🏻</span>
+                        </p>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                            <!-- Feedback 1 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        JM
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">João Marcelo</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "A melhor loja de 8 ball pool é a do Gamesoft, compro a mais de 3 anos só com ele"
+                                </p>
+                            </div>
+
+                            <!-- Feedback 2 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        JS
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">João Santos</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "Guigo é foda demais, alemm dos videos ele tambem é um excelente vendedor, comprem sem medo"
+                                </p>
+                            </div>
+
+                            <!-- Feedback 3 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        AC
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Ana Costa</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "Comprei com outras pessoas que vendem mais barato ee tive problemas, ja com o Gui sempre sou bem atendida, melhor loja do 8 ball"
+                                </p>
+                            </div>
+
+                            <!-- Feedback 4 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        CO
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Carlos Oliveira</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "Processo de compra muito simples e seguro. Recebi as fichas e notas no mesmo dia que paguei. Vou comprar novamente!"
+                                </p>
+                            </div>
+
+                            <!-- Feedback 5 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        LF
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Lucas Ferreira</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "Podem confiar galera, unico vendedor do jogo que confio de olhos fechados, Gamesoft é o melhor"
+                                </p>
+                            </div>
+
+                            <!-- Feedback 6 -->
+                            <div class="feedback-card bg-card border border-border rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full mr-4 flex-shrink-0 bg-primary flex items-center justify-center text-white font-bold text-lg">
+                                        RL
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Rafael Lima</h4>
+                                        <div class="flex items-center">
+                                            <div class="flex text-yellow-400">
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                            </div>
+                                            <span class="text-muted-foreground text-sm ml-2">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    "minha conta ficou top graças ao gamesoft, consegui desbloquear os 20 lendarios com a loja dele"
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-12">
+                            <div class="bg-card border border-border rounded-xl p-6 md:p-8">
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-3xl md:text-4xl font-bold mb-2 font-unbounded text-white">
+                                            Prova Social
+                                        </h3>
+                                        <p class="text-muted-foreground text-base md:text-lg font-unbounded-light">
+                                            Veja a página completa de avaliações com imagens e posts no Instagram.
+                                        </p>
+                                    </div>
+                                    <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAyMTUzMjU3MDc3NDE0?igsh=MTg3dDJ0aHVmYXpsbg==" target="_blank" rel="noopener noreferrer" class="btn-primary flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+              Ver todas as avaliações
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const feedbackCards = document.querySelectorAll('.feedback-card');
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry, index) => {
+                            if (entry.isIntersecting) {
+                                setTimeout(() => {
+                                    entry.target.style.opacity = '1';
+                                    entry.target.style.transform = 'translateY(0)';
+                                }, index * 100);
+                            }
+                        });
+                    }, {
+                        threshold: 0.1
+                    });
+
+                    feedbackCards.forEach(card => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(30px)';
+                        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        observer.observe(card);
+                    });
+
+                    // Inicializa os ícones do Lucide
+                    if (typeof lucide !== 'undefined') {
+                        lucide.createIcons();
+                    }
+                });
+            </script>
+
+            <style>
+                .feedback-card {
+                    transition: all 0.3s ease;
+                }
+
+                .feedback-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                }
+
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .feedback-card {
+                    animation: fadeInUp 0.6s ease forwards;
+                }
+
+                .feedback-card:nth-child(1) {
+                    animation-delay: 0.1s;
+                }
+
+                .feedback-card:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+
+                .feedback-card:nth-child(3) {
+                    animation-delay: 0.3s;
+                }
+
+                .feedback-card:nth-child(4) {
+                    animation-delay: 0.4s;
+                }
+
+                .feedback-card:nth-child(5) {
+                    animation-delay: 0.5s;
+                }
+
+                .feedback-card:nth-child(6) {
+                    animation-delay: 0.6s;
+                }
+            </style>
+
+            <!-- Seção de Perguntas Frequentes -->
+            <section id="perguntas-frequentes" class="py-16 overflow-x-hidden">
+                <div class="container overflow-x-hidden">
+                    <div class="max-w-4xl mx-auto faq-container overflow-x-hidden w-full">
+                        <div class="text-center mb-12">
+                            <h2 class="text-5xl md:text-5xl font-bold mb-4 font-unbounded headline-shadow">
+                                Perguntas <span class="text-primary text-4xl md:text-5xl">Frequentes</span>
+                            </h2>
+                            <p class="text-muted-foreground text-lg max-w-3xl mx-auto font-unbounded-light">
+                                Tire suas dúvidas sobre nossos produtos, pagamentos, entregas e muito mais
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+
+                            <!-- FAQ Item 1 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Como funciona o pagamento?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            Aceitamos diversos métodos de pagamento: cartão de crédito PIX e Mercado Pago. Todos os pagamentos são processados de forma segura e você recebe a confirmação imediatamente após a aprovação.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Qual o prazo de entrega?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            A entrega da nossa loja depende do item comprado. Verifique na página no produto, porém garanto que nossa loja é a mais rápida do Brasil e alguns produtos a entrega é imediata.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Posso cancelar minha compra?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            Você só pode cancelar a compra antes de receber seu pedido. Como trabalhamos com itens digitais, não é possível pedir reembolso após a entrega do mesmo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Tem risco de banimento?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            Todos os produtos são entregues de forma 100% segura sem NENHUM risco de banimento. A maior loja do Brasil, 9 anos vendendo itens para 8 Ball Pool ✅
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Preciso passar os dados da minha conta?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            Se você quer receber o produto na sua conta, vamos precisar entrar nela para adicionar. Fique tranquilo que não tem nenhum risco. Trabalhamos com contas Facebook, Miniclip e Google.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 6 -->
+                            <div class="faq-item bg-card border border-border rounded-lg overflow-hidden">
+                                <button class="faq-button w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-primary/50 transition-colors" onclick="toggleFAQ(this)">
+            <span class="font-semibold text-lg break-words">Como entrar em contato?</span>
+            <svg class="faq-icon w-5 h-5 text-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+                                <div class="faq-content hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
+                                            Estamos disponíveis 24/7! Você pode nos contatar através do WhatsApp (18) 98163-2125 de segunda a sexta das 11H a 21H.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                function toggleFAQ(button) {
+                    const faqItem = button.closest('.faq-item');
+                    const content = faqItem.querySelector('.faq-content');
+                    const icon = faqItem.querySelector('.faq-icon');
+
+                    // Fechar todos os outros FAQs
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem) {
+                            const otherContent = item.querySelector('.faq-content');
+                            const otherIcon = item.querySelector('.faq-icon');
+                            otherContent.classList.add('hidden');
+                            otherContent.style.maxHeight = '0';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle do FAQ atual
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.style.maxHeight = '0';
+                        setTimeout(() => {
+                            content.classList.add('hidden');
+                        }, 300);
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                }
+
+                // Inicialização quando o DOM estiver carregado
+                document.addEventListener('DOMContentLoaded', function() {
+                    const faqContents = document.querySelectorAll('.faq-content');
+
+                    faqContents.forEach(content => {
+                        content.style.maxHeight = '0';
+                        content.style.overflow = 'hidden';
+                        content.style.transition = 'max-height 0.3s ease-out';
+                    });
+
+                    // Observer para animações de entrada
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.style.opacity = '1';
+                                entry.target.style.transform = 'translateY(0)';
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('.faq-item').forEach((item, index) => {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                        observer.observe(item);
+                    });
+                });
+            </script>
+
+            <style>
+                .faq-container {
+                    background: rgb(var(--card));
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 1.5rem;
+                    padding: 2rem;
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+                    max-width: 100%;
+                    overflow-x: hidden;
+                }
+
+                @media (max-width: 768px) {
+                    .faq-container {
+                        padding: 1.5rem;
+                    }
+                }
+
+                .faq-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-out;
+                }
+
+                .faq-content:not(.hidden) {
+                    max-height: 200px;
+                    transition: max-height 0.3s ease-in;
+                }
+
+                .faq-item {
+                    transition: all 0.3s ease;
+                }
+
+                .faq-item:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                }
+
+                .faq-button {
+                    min-width: 0;
+                    overflow: hidden;
+                }
+
+                .faq-button span {
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    max-width: 100%;
+                }
+
+                .faq-button:focus {
+                    outline: none;
+                    ring: 2px;
+                    ring-color: hsl(var(--primary));
+                }
+
+                /* Animação de entrada */
+
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .faq-item {
+                    animation: fadeInUp 0.6s ease forwards;
+                }
+
+                .faq-item:nth-child(1) {
+                    animation-delay: 0.1s;
+                }
+
+                .faq-item:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+
+                .faq-item:nth-child(3) {
+                    animation-delay: 0.3s;
+                }
+
+                .faq-item:nth-child(4) {
+                    animation-delay: 0.4s;
+                }
+
+                .faq-item:nth-child(5) {
+                    animation-delay: 0.5s;
+                }
+
+                .faq-item:nth-child(6) {
+                    animation-delay: 0.6s;
+                }
+            </style>
+
+            </div>
+    </main>
+
+    <div class="mt-auto relative">
+        <div class="absolute top-[-300px] left-0 w-full pointer-events-none">
+            <div class="footer-bg"></div>
+        </div>
+
+        <footer class="bg-background/80 backdrop-blur-md z-10 relative overflow-hidden pl-4">
+            <div class="py-4 md:py-8 border-t">
+                <div class="container">
+                    <div class="block md:hidden space-y-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-3">
+
+                                <img src="https://cdn.centralcart.io/stores/12813/theme/905d95af-6555-4f82-8151-3b3617b465c8.png" class="w-8 h-8 object-contain" />
+
+                                <h3 class="text-lg font-bold text-white">Gamesoft - 8 Ball Pool</h3>
+                            </div>
+
+
+                            <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
+                                A maior loja de 8 Ball Pool do Brasil, oficial do canal Gamesoft Plays
+                            </p>
+
+
+                            <div class="mb-4">
+                                <h4 class="text-white font-semibold mb-3">Nossas redes</h4>
+                                <div class="flex gap-3">
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://www.instagram.com/gamesoft8ballpool/" target="_blank" aria-label="Instagram">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://www.youtube.com/@GamesoftPlays" target="_blank" aria-label="Youtube">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://wa.me/5517936332463" target="_blank" aria-label="Whatsapp">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://t.me/gamesoft8bp" target="_blank" aria-label="Telegram">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');"
+                      ></svg>
+                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-semibold mb-3">Navegação</h4>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="/" class="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                  </svg>
+                  Página Inicial
+                </a>
+                                </li>
+                                <li>
+                                    <a href="/feedbacks-page" class="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                  </svg>
+                  Feedbacks
+                </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-semibold mb-3">Informações</h4>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="/terms" class="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Termos de Serviço
+                </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-white font-semibold mb-3">Selos de Confiança</h4>
+                            <div class="flex gap-4">
+                                <img src="https://www.siteconfiavel.com.br/assets/img/logo.svg" alt="Site Confiável" class="h-8 w-auto" />
+
+                                <img src="https://storage.googleapis.com/reclameaqui-assets/images/favicon.ico" alt="Reclame Aqui" class="h-8 w-8" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:grid grid-cols-3 gap-8">
+                        <div>
+                            <div class="flex items-center gap-2 mb-4">
+
+                                <img src="https://cdn.centralcart.io/stores/12813/theme/905d95af-6555-4f82-8151-3b3617b465c8.png" class="w-8 h-8 object-contain" />
+
+                                <h3 class="text-lg font-bold text-white">Gamesoft - 8 Ball Pool</h3>
+                            </div>
+
+
+                            <p class="text-muted-foreground text-sm mb-4 leading-relaxed">
+                                A maior loja de 8 Ball Pool do Brasil, oficial do canal Gamesoft Plays
+                            </p>
+
+
+                            <div class="mb-4">
+                                <h4 class="text-white font-semibold mb-3">Nossas redes</h4>
+                                <div class="flex gap-3">
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://www.instagram.com/gamesoft8ballpool/" target="_blank" aria-label="Instagram">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/instagram.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://www.youtube.com/@GamesoftPlays" target="_blank" aria-label="Youtube">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/youtube.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://wa.me/5517936332463" target="_blank" aria-label="Whatsapp">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/whatsapp.svg');"
+                      ></svg>
+                    </a>
+
+
+
+
+
+
+                                    <a class="rounded-md w-10 h-10 flex justify-center items-center bg-primary/40 
+                      hover:bg-secondary/20" href="https://t.me/gamesoft8bp" target="_blank" aria-label="Telegram">
+                      <svg 
+                        class="w-5 h-5 bg-foreground" 
+                        style="mask-position:center;mask-repeat:no-repeat;mask-size:contain;
+                        mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');
+                        -webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;
+                        -webkit-mask-image:url('https://cdn.centralcart.io/public/assets/images/brands/telegram.svg');"
+                      ></svg>
+                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <div>
+                                <h4 class="text-white font-semibold mb-4">Navegação</h4>
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a href="/" class="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    Página Inicial
+                  </a>
+                                    </li>
+                                    <li>
+                                        <a href="/feedbacks-page" class="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                    </svg>
+                    Feedbacks
+                  </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div class="text-right">
+                                <h4 class="text-white font-semibold mb-4">Informações</h4>
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a href="/terms" class="flex items-center justify-end gap-2 text-muted-foreground hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Termos de Serviço
+                  </a>
+                                    </li>
+                                </ul>
+
+                                <div class="mt-6">
+                                    <h4 class="text-white font-semibold mb-3">Selos de Confiança</h4>
+                                    <div class="flex gap-4 justify-end">
+                                        <img src="https://www.siteconfiavel.com.br/assets/img/logo.svg" alt="Site Confiável" class="h-8 w-auto" />
+
+
+                                        <img src="https://storage.googleapis.com/reclameaqui-assets/images/favicon.ico" alt="Reclame Aqui" class="h-8 w-8" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800"></div>
+
+            <div class="py-3 md:py-4">
+                <div class="container">
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 md:gap-4">
+                        <div class="text-muted-foreground text-sm">
+                            © 2026 Gamesoft - 8 Ball Pool. Todos os direitos reservados.
+                        </div>
+
+                        <div class="flex flex-wrap gap-4 text-sm">
+                            <div class="flex items-center gap-1 text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+                                <span class="text-white">100% Seguro</span>
+                            </div>
+
+                            <div class="flex items-center gap-1 text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+              </svg>
+                                <span class="text-white">Entrega super rápida</span>
+                            </div>
+
+                            <div class="flex items-center gap-1 text-primary">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+                                <span class="text-white">Suporte 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const store = {
+            currency: 'BRL',
+        };
+
+        window.SALES_CONFIG = {
+            startDate: '2025-12-12',
+            initialSalesByCategory: {
+                'fichas': [7600, 12000],
+                'Notas': [12000, 15000],
+                'VIP': [6500, 8000],
+                'Moedas': [5500, 7000],
+            },
+            useManualSales: true,
+            debug: false
+        };
+    </script>
+
+    <script>
+        (function() {
+            'use strict';
+
+            const DEFAULT_MIN = 500;
+            const DEFAULT_MAX = 1000;
+
+            function generateStableRandom(seed) {
+                let hash = 0;
+                for (let i = 0; i < seed.length; i++) {
+                    const char = seed.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char;
+                    hash = hash & hash;
+                }
+                return Math.abs(hash) / 2147483647;
+            }
+
+            function calculateSales(packageId, categoryName, price) {
+                function getDefaultSales(seed) {
+                    const random = generateStableRandom(seed);
+                    const range = DEFAULT_MAX - DEFAULT_MIN;
+                    const sales = DEFAULT_MIN + Math.floor(random * (range + 1));
+                    return Math.max(DEFAULT_MIN, Math.min(DEFAULT_MAX, sales));
+                }
+
+                if (!window.SALES_CONFIG || window.SALES_CONFIG.useManualSales !== true) {
+                    const seed = `${packageId || 'no-id'}-${categoryName || 'default'}-no-config`;
+                    return getDefaultSales(seed);
+                }
+
+                if (!categoryName || categoryName.trim() === '') {
+                    const seed = `${packageId || 'no-id'}-empty`;
+                    return getDefaultSales(seed);
+                }
+
+                if (!window.SALES_CONFIG.initialSalesByCategory || Object.keys(window.SALES_CONFIG.initialSalesByCategory).length === 0) {
+                    const seed = `${packageId || 'no-id'}-${categoryName}-no-categories`;
+                    return getDefaultSales(seed);
+                }
+
+                const categoryLower = categoryName.toLowerCase().trim();
+                let foundCategory = null;
+                let foundConfig = null;
+
+                for (const [configCategory, configValue] of Object.entries(window.SALES_CONFIG.initialSalesByCategory)) {
+                    const configCategoryLower = configCategory.toLowerCase().trim();
+
+                    if (categoryLower === configCategoryLower) {
+                        foundCategory = configCategory;
+                        foundConfig = configValue;
+                        break;
+                    }
+                }
+
+                if (!foundCategory || !foundConfig) {
+                    const seed = `${packageId || 'no-id'}-${categoryName}-default`;
+                    const sales = getDefaultSales(seed);
+
+                    if (window.SALES_CONFIG.debug) {
+                        console.log(`[Sales] "${categoryName}" não configurada. Usando padrão: ${sales} (${DEFAULT_MIN}-${DEFAULT_MAX})`);
+                    }
+
+                    return sales;
+                }
+
+                let minValue, maxValue;
+
+                if (Array.isArray(foundConfig) && foundConfig.length === 2) {
+                    minValue = Math.floor(Number(foundConfig[0]));
+                    maxValue = Math.floor(Number(foundConfig[1]));
+                } else if (typeof foundConfig === 'object' && foundConfig.min !== undefined && foundConfig.max !== undefined) {
+                    minValue = Math.floor(Number(foundConfig.min));
+                    maxValue = Math.floor(Number(foundConfig.max));
+                } else {
+                    minValue = Math.floor(Number(foundConfig));
+                    maxValue = minValue;
+                }
+
+                if (minValue > maxValue) {
+                    const temp = minValue;
+                    minValue = maxValue;
+                    maxValue = temp;
+                }
+
+                if (isNaN(minValue) || isNaN(maxValue) || minValue < 0 || maxValue < 0) {
+                    if (window.SALES_CONFIG.debug) {
+                        console.log(`[Sales] "${categoryName}" → "${foundCategory}": valores inválidos. Não exibindo vendas.`);
+                    }
+                    return null;
+                }
+
+                const seed = `${packageId || 'no-id'}-${categoryName}-${foundCategory}`;
+                const random = generateStableRandom(seed);
+                const range = maxValue - minValue;
+                const sales = minValue === maxValue ? minValue : minValue + Math.floor(random * (range + 1));
+
+                if (window.SALES_CONFIG.debug) {
+                    console.log(`[Sales] "${categoryName}" → "${foundCategory}": ${sales} (${minValue}-${maxValue})`);
+                }
+
+                return Math.max(1, sales);
+            }
+
+            function formatSalesNumber(num) {
+                const integerNum = Math.floor(Number(num));
+                if (isNaN(integerNum) || integerNum < 0) return '0';
+
+                const numStr = integerNum.toString();
+
+                if (numStr.length <= 3) {
+                    return numStr;
+                }
+
+                let formatted = '';
+                let digitCount = 0;
+
+                for (let i = numStr.length - 1; i >= 0; i--) {
+                    if (digitCount > 0 && digitCount % 3 === 0) {
+                        formatted = '.' + formatted;
+                    }
+                    formatted = numStr[i] + formatted;
+                    digitCount++;
+                }
+
+                return formatted;
+            }
+
+            window.SalesCalculator = {
+                calculate: calculateSales,
+                formatNumber: formatSalesNumber
+            };
+        })();
+    </script>
+
+
+
+    <script>
+        function updateDrawerItems() {
+            const cartDrawer = document.getElementById('cart-drawer');
+            const drawerWrapper = document.getElementById('cart-drawer-wrapper');
+
+            const cartPackages = Cart.getPackages();
+
+            if (cartPackages.length < 1) {
+                drawerWrapper.innerHTML = `<div class="h-full flex flex-col">
+  <div class="my-auto text-center flex flex-col items-center">
+    <i data-lucide="shopping-cart" class="w-10 h-10 text-primary"></i>
+
+    <p class="text-lg font-semibold">Seu carrinho está vazio.</p>
+    <p class="text-sm text-muted-foreground">Assim que você escolher um produto, ele aparecerá aqui!</p>
+  </div>
+</div>`;
+            } else {
+                drawerWrapper.innerHTML = cartPackages.map((package) => `<div class="flex flex-wrap gap-4 items-center justify-between text-sm" data-package-id="${package.id}">
+  <div class="flex gap-4 items-center">
+    <img class="object-cover w-16 h-16 rounded-md" src="${package.image ? package.image : `https://cdn.centralcart.io/public/assets/templates/KOPY/no-image.png`}" />
+    <div class="w-[150px]">
+      <h5 class="leading-4 font-semibold line-clamp-2" title="${package.name}">${package.name}</h5>
+      <p class="text-lg font-medium tracking-tight text-muted-foreground">
+        ${CentralCart.formatPrice(package.pricing.price, store.currency)}
+      </p>
+    </div>
+  </div>
+
+  <div id="cart-actions-${package.id}" class="flex gap-2 items-center data-[loading]:opacity-60 data-[loading]:pointer-events-none">
+    <button 
+      class="border rounded-md w-8 h-8 flex items-center justify-center disabled:opacity-50"
+      data-cart-action="decrease"
+      data-min-amount="${package.stock.min_amount}"
+      ${package.stock.min_amount && package.cart_item.quantity <= package.stock.min_amount ? 'disabled' : ''}
+    >
+      <i data-lucide="minus" class="w-4 h-4"></i>
+    </button>
+
+    <input data-cart-action="input" autocomplete="off" value="${package.cart_item.quantity}" class="w-10 h-8 text-center px-0" />
+
+    <button data-cart-action="increase" class="border rounded-md w-8 h-8 flex items-center justify-center">
+      <i data-lucide="plus" class="w-4 h-4"></i>
+    </button>
+
+    <button data-cart-action="remove" class="border rounded-md w-8 h-8 flex items-center justify-center bg-red-500">
+      <i data-lucide="x" class="w-4 h-4"></i>
+    </button>
+  </div>
+</div>  `).join('');
+            }
+
+            const pricing = cartDrawer.querySelector("#cart-pricing");
+            if (Cart.getPackages().length < 1) {
+                pricing.style.display = "none";
+            } else {
+                pricing.style.display = "flex";
+                pricing.querySelector("span").innerHTML = CentralCart.formatPrice(Cart.calculateTotal(), store.currency);
+            }
+
+            lucide.createIcons();
+            initCartActionListeners(cartDrawer);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="https://cdn.centralcart.io/public/assets/js/centralcart-e1771c4a.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.centralcart.io/public/assets/css/centralcart.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/cart.js"></script>
+    <script src="/scripts/dialog.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.js"></script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vj2rjpngp8");
+    </script>
+
+    <script>
+        const allowedParams = [
+            'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+            'gclid', 'fbclid', 'msclkid',
+            'ref', 'campaign', 'source', 'medium', 'adgroup',
+            'creative', 'term', 'placement', 'device', 'channel',
+            'pk_campaign', 'pk_source', 'pk_medium',
+            'hsa_cam', 'hsa_grp', 'hsa_mt', 'hsa_src', 'hsa_ad',
+            'scid', 'ncid', 's_kwcid',
+            'direct', 'src', 'sck',
+            'network', 'keyword',
+            'gad_campaignid', 'gad_source', 'gbraid', 'wbraid', 'ttclid',
+        ];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const trackingData = {};
+
+        for (const key of allowedParams) {
+            const value = urlParams.get(key);
+            if (value) trackingData[key] = value;
+        }
+
+        if (Object.keys(trackingData).length > 0) {
+            trackingData.ts = new Date().toISOString();
+            document.cookie = '_cc_trck=' + encodeURIComponent(JSON.stringify(trackingData)) + '; path=/; max-age=' + (30 * 24 * 60 * 60) + '; Secure; SameSite=Lax';
+        }
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"b7c68cc44c2946c09138a59d62859388","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
